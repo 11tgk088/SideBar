@@ -1,0 +1,49 @@
+.sideBarWrap {
+    background: rgba(0, 0, 0, 0.80);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    color: #fff;
+    width: 50px;
+    transition: 0.5s ease;
+}
+.sideBarOpen{
+    width: 25vw;
+}
+.sideBarWrap nav{
+    margin-top: 7vh;
+}
+.sideBarWrap nav ul li a{
+    color: #fff;
+    padding-left: 0px;
+    white-space: nowrap;
+}
+.sideBarWrap nav ul li a > .icon-info{
+    min-width: 30px;
+    display: inline-flex;
+}
+.openClose-sidebar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+.openClose-sidebar i {
+    font-size: 20px;
+    cursor: pointer;
+}
+#closeBar,
+.sideBarOpen #openBar,
+.sideBarWrap .atext-info{
+    display: none;
+}
+.sideBarOpen #closeBar,
+.sideBarOpen .atext-info{
+    display: inline-flex;
+    /* white-space: nowrap; */
+}
